@@ -1,19 +1,19 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2025-06-27 18:13:40.047935",
+ "creation": "2025-06-30 16:55:25.779008",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "email_id",
+  "email",
   "password"
  ],
  "fields": [
   {
-   "fieldname": "email_id",
+   "fieldname": "email",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Email ID",
+   "label": "Email",
    "reqd": 1
   },
   {
@@ -26,8 +26,9 @@
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_virtual": 1,
  "links": [],
- "modified": "2025-06-27 18:14:15.904377",
+ "modified": "2025-06-30 16:55:50.362616",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Login",

@@ -1,0 +1,35 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Gym Membership",
+  "enabled": 1,
+  "modified": "2025-06-30 12:37:02.743438",
+  "module": "Gym Management System",
+  "name": "Metric Calculation",
+  "script": "\n\n\nfrappe.ui.form.on('Metric Update', {\n    height: function(frm, cdt, cdn) {\n        calculate_bmi(frm, cdt, cdn);\n    },\n    weight: function(frm, cdt, cdn) {\n        calculate_bmi(frm, cdt, cdn);\n    }\n});\n\nfunction calculate_bmi(frm, cdt, cdn) {\n    let row = locals[cdt][cdn];\n    if (row.height && row.weight) {\n        // Assuming height is in meters and weight in kg\n        let bmi = row.weight / (row.height * row.height);\n        row.bmi = parseFloat(bmi).toFixed(2);\n        frm.refresh_field(\"metric_update\"); // replace with your actual child table fieldname\n    }\n}\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Gym Membership",
+  "enabled": 1,
+  "modified": "2025-06-30 10:56:24.118299",
+  "module": "Gym Management System",
+  "name": "Ending Date Calculation",
+  "script": "frappe.ui.form.on('Gym Membership', {\n    plans: function(frm) {\n        auto_calculate_ending_date(frm);\n    },\n    joining_date: function(frm) {\n        auto_calculate_ending_date(frm);\n    }\n});\n\nconst PLAN_DURATION_DAYS = {\n    \"Monthly (₹3000)\": 30,\n    \"Quarterly (₹6000)\": 90,\n    \"Yearly (₹15000)\": 365\n};\n\nfunction auto_calculate_ending_date(frm) {\n    const joining_date = frm.doc.joining_date;\n    const selected_plan = frm.doc.plans;\n\n    if (!joining_date || !selected_plan) {\n        frm.set_value('ending_date', null);\n        return;\n    }\n\n    const duration_days = PLAN_DURATION_DAYS[selected_plan];\n\n    if (!duration_days) {\n        frappe.msgprint(__('Invalid plan selected: ') + selected_plan);\n        frm.set_value('ending_date', null);\n        return;\n    }\n\n    const start_date = frappe.datetime.str_to_obj(joining_date);\n    const end_date = frappe.datetime.add_days(start_date, duration_days);\n    const end_date_str = frappe.datetime.obj_to_str(end_date);\n\n    frm.set_value('ending_date', end_date_str);\n}\n\n\n",
+  "view": "Form"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Gym Membership",
+  "enabled": 1,
+  "modified": "2025-07-05 11:59:57.214507",
+  "module": null,
+  "name": "Locker Count",
+  "script": "frappe.ui.form.on(\"Gym Membership\", {\n  onload: function (frm) {\n    frm.set_query(\"locker\", () => {\n      return {\n        filters: {\n          member: \"\"\n        }\n      };\n    });\n  },\n\n  assign_locker: function (frm) {\n    const assign_locker = frm.doc.assign_locker;\n\n    if (assign_locker === \"Yes\") {\n      frappe.call({\n        method: \"frappe.client.get_list\",\n        args: {\n          doctype: \"Locker\",\n          filters: { member: \"\" },\n          limit_page_length: 1\n        },\n        callback: function (r) {\n          if (r.message && r.message.length) {\n            frm.set_value(\"locker\", r.message[0].name);\n          } else {\n            frappe.msgprint(\" No lockers available\");\n            frm.set_value(\"assign_locker\", \"No\");\n            frm.set_value(\"locker\", \"\");\n          }\n        }\n      });\n    } else {\n      frm.set_value(\"locker\", \"\");\n    }\n  }\n});\n",
+  "view": "Form"
+ }
+]

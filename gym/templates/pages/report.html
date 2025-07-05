@@ -1,0 +1,131 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h2>Gym Membership Profile</h2>
+
+<form id="search-form" onsubmit="fetchReport(); return false;">
+  <label for="member_name">Enter Membership ID:</label>
+  <input type="text" id="member_name" name="member_name" required>
+  <button type="submit">Get Profile</button>
+</form>
+
+<div id="report" style="margin-top: 20px;"></div>
+
+
+<script src="/assets/js/frappe.min.js"></script>
+
+<script>
+  async function fetchReport() {
+    const memberName = document.getElementById('member_name').value.trim();
+    const reportDiv = document.getElementById('report');
+    reportDiv.innerHTML = "";
+
+    if (!memberName) {
+      reportDiv.innerHTML = "<p style='color:red;'>Please enter a Membership ID</p>";
+      return;
+    }
+
+    try {
+  
+      const r = await frappe.call({
+        method: "frappe.client.get",
+        args: {
+          doctype: "Gym Membership",
+          name: memberName
+        }
+      });
+
+      const data = r.message;
+      if (!data) {
+        reportDiv.innerHTML = "<p>No record found with this ID.</p>";
+        return;
+      }
+
+      
+      let specializationName = data.specialization;
+      if (data.specialization) {
+        try {
+          const specRes = await frappe.call({
+            method: "frappe.client.get_value",
+            args: {
+              doctype: "Category",
+              filters: { name: data.specialization },
+              fieldname: "specialization"  
+            }
+          });
+
+          if (specRes.message && specRes.message.specialization) {
+            specializationName = specRes.message.specialization;
+          }
+        } catch (err) {
+          console.warn("Specialization lookup failed:", err);
+        }
+      }
+
+     
+      const today = new Date();
+      const endingDate = new Date(data.ending_date);
+      const remainingDays = Math.max(0, Math.ceil((endingDate - today) / (1000 * 3600 * 24)));
+
+      
+      let fitnessTrackRows = "";
+      if (data.fitness_track && data.fitness_track.length > 0) {
+        fitnessTrackRows = data.fitness_track.map(row => `
+          <tr>
+            <td>${row.metric || ""}</td>
+            <td>${row.height || ""}</td>
+            <td>${row.weight || ""}</td>
+            <td>${row.calories || ""}</td>
+            <td>${row.bmi || ""}</td>
+          </tr>
+        `).join('');
+      } else {
+        fitnessTrackRows = `<tr><td colspan="5">No fitness tracking data</td></tr>`;
+      }
+
+     
+      function formatDate(dateStr) {
+        return dateStr ? frappe.datetime.str_to_user(dateStr) : "";
+      }
+
+
+      reportDiv.innerHTML = `
+        <h3>Member Details</h3>
+        <p><strong>Name:</strong> ${data.name1 || ""}</p>
+        <p><strong>Email:</strong> ${data.email_id || ""}</p>
+        <p><strong>Contact:</strong> ${data.contact || ""}</p>
+        <p><strong>Gender:</strong> ${data.gender || ""}</p>
+        <p><strong>Membership Plan:</strong> ${data.plans || ""}</p>
+        <p><strong>Joining Date:</strong> ${formatDate(data.joining_date)}</p>
+        <p><strong>Ending Date:</strong> ${formatDate(data.ending_date)}</p>
+        <p><strong>Remaining Days:</strong> ${remainingDays} days</p>
+        <p><strong>Assign Locker:</strong> ${data.assign_locker || ""}</p>
+        <p><strong>Locker:</strong> ${data.locker || ""}</p>
+        <p><strong>Address:</strong> ${data.address || ""}</p>
+
+        <h3>Fitness Tracking</h3>
+        <table border="1" cellpadding="5" cellspacing="0" style="border-collapse: collapse; width: 100%;">
+          <thead>
+            <tr>
+              <th>Metric</th>
+              <th>Height</th>
+              <th>Weight</th>
+              <th>Calories</th>
+              <th>BMI</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${fitnessTrackRows}
+          </tbody>
+        </table>
+
+        <p><strong>Specialization:</strong> ${specializationName || "---"}</p>
+        <p><strong>Trainer:</strong> ${data.trainer || ""}</p>
+      `;
+    } catch (err) {
+      console.error(" Error fetching report:", err);
+      reportDiv.innerHTML = "<p style='color:red;'>Something went wrong. Check the browser console.</p>";
+    }
+  }
+</script>
+{% endblock %}

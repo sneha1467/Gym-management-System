@@ -8,7 +8,7 @@
   "date",
   "height",
   "weight",
-  "calories_intake",
+  "calories",
   "bmi"
  ],
  "fields": [
@@ -36,17 +36,17 @@
    "reqd": 1
   },
   {
+   "fieldname": "calories",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Calories",
+   "reqd": 1
+  },
+  {
    "fieldname": "bmi",
    "fieldtype": "Float",
    "in_list_view": 1,
    "label": "BMI",
-   "reqd": 1
-  },
-  {
-   "fieldname": "calories_intake",
-   "fieldtype": "Float",
-   "in_list_view": 1,
-   "label": "Calories Intake",
    "reqd": 1
   }
  ],
@@ -54,7 +54,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-06-26 14:38:20.478241",
+ "modified": "2025-07-04 12:03:29.350047",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Metric Update",

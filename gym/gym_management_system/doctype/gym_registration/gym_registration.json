@@ -16,6 +16,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Role",
+   "options": "Admin\nTrainer\nUser",
    "reqd": 1
   },
   {
@@ -43,7 +44,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-27 18:15:43.160064",
+ "modified": "2025-06-28 09:49:52.873604",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Registration",

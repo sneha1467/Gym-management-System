@@ -6,15 +6,20 @@
  "engine": "InnoDB",
  "field_order": [
   "name1",
-  "contact",
   "email_id",
+  "contact",
   "gender",
   "plans",
-  "locker",
   "joining_date",
   "ending_date",
+  "assign_locker",
+  "locker",
   "address",
-  "track"
+  "fitness_track",
+  "specialization",
+  "trainer",
+  "trainer_rating",
+  "final_price"
  ],
  "fields": [
   {
@@ -22,7 +27,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Name",
-   "reqd": 1
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "contact",
@@ -62,7 +68,7 @@
    "fieldname": "plans",
    "fieldtype": "Select",
    "label": " Membership Plans",
-   "options": "Monthly (\u20b93000)\nQuarterly (\u20b96000)\nYearly (\u20b910000)",
+   "options": "Monthly (\u20b93000)\nQuarterly (\u20b96000)\nYearly (\u20b915000)",
    "reqd": 1
   },
   {
@@ -73,23 +79,51 @@
   },
   {
    "fieldname": "locker",
+   "fieldtype": "Link",
+   "label": "Locker ",
+   "options": "Locker"
+  },
+  {
+   "fieldname": "assign_locker",
    "fieldtype": "Select",
-   "label": "Locker",
-   "options": "Yes\nNo",
+   "label": "Assign Locker",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "fitness_track",
+   "fieldtype": "Table",
+   "label": "Fitness Track",
+   "options": "Metric Update",
    "reqd": 1
   },
   {
-   "fieldname": "track",
-   "fieldtype": "Table",
-   "label": "Track",
-   "options": "Metric Update",
+   "fieldname": "specialization",
+   "fieldtype": "Link",
+   "label": "Specialization",
+   "options": "Category",
    "reqd": 1
+  },
+  {
+   "fieldname": "trainer",
+   "fieldtype": "Select",
+   "label": "Trainer"
+  },
+  {
+   "fieldname": "trainer_rating",
+   "fieldtype": "Rating",
+   "label": "Trainer Rating"
+  },
+  {
+   "fieldname": "final_price",
+   "fieldtype": "Currency",
+   "label": "Final Price",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-26 16:34:59.942512",
+ "modified": "2025-07-05 14:15:55.501172",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Membership",

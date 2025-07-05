@@ -13,14 +13,14 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Specialization",
-   "options": "Gym/Strength Training\nCrossfit\nCalisthenics\nPowerlifting\nZumba\nKickboxing\nMMA(Mixed Martial Arts)",
+   "options": "Gym/Strength Training\nCrossfit\nCalisthenics\nPowerlifting\nZumba\nKickboxing\nMMA(Mixed Martial Arts)\nDance\nBoxing\nFitness Traning",
    "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-25 16:57:41.181038",
+ "modified": "2025-07-05 13:28:55.709799",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Category",

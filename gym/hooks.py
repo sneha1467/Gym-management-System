@@ -242,6 +242,49 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+import gym.gym_management_system.api
+#gym.gym_management_system.api
 
 
 
+
+website_route_rules = [
+    {"from_route": "/report", "to_route": "report"}
+]
+
+
+fixtures = [
+{
+"doctype": "DocType",
+"filters": [["name", "in", [
+"Gym Membership",
+"Gym Settings",
+"Locker",
+"Gym TrainerReg",
+"Category",
+"Metric Update",
+"Trainer Specialization"
+]]]
+},
+"Custom Field",
+"Client Script",
+"Server Script",
+"Property Setter",
+"Workflow",
+"Print Format",
+"Report",
+"Custom DocPerm",
+"Role",
+"Web Form",
+{
+"doctype": "Web Page",
+"filters": [["module", "=", "gym_management_system"]]
+},
+{
+"doctype": "Web Template",
+"filters": [["module", "=", "gym_management_system"]]
+},
+{
+"doctype": "Website Settings"
+}
+]

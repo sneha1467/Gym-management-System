@@ -1,0 +1,50 @@
+frappe.ready(() => {
+    // Get current user's roles
+    frappe.call({
+        method: "frappe.client.get_list",
+        args: {
+            doctype: "Has Role",
+            filters: { parent: frappe.session.user },
+            fields: ["role"]
+        },
+        callback: function (res) {
+            const roles = res.message.map(r => r.role);
+            const items = getNavbarItems(roles);
+            renderNavbar(items);
+        }
+    });
+
+    function getNavbarItems(roles) {
+        const all = {
+            "About": "/about",
+            "Trainer": "http://127.0.0.1:8001/gym-trainer/new",
+            "Member": "http://127.0.0.1:8001/gym-membership/new",
+            "Settings": "/settings",
+            "Workout Plan": "http://127.0.0.1:8001/workout-plan/new"
+        };
+
+        let visible = [];
+
+        if (roles.includes("Administrator")) {
+            visible = Object.keys(all);
+        } else if (roles.includes("Member")) {
+            visible = ["About", "Member", "Settings", "Workout Plan"];
+        } else if (roles.includes("Trainer")) {
+            visible = ["Trainer", "Settings", "About", "Workout Plan"];
+        }
+
+        return visible.map(label => ({ label, route: all[label] }));
+    }
+
+    function renderNavbar(items) {
+        const navbar = document.querySelector(".navbar-nav");
+        if (!navbar) return;
+
+        items.forEach(item => {
+            const li = document.createElement("li");
+            li.className = "nav-item";
+            li.innerHTML = `<a class="nav-link" href="${item.route}">${item.label}</a>`;
+            navbar.appendChild(li);
+        });
+    }
+});
