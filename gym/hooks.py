@@ -306,11 +306,11 @@ fixtures = [
     },
     {
         "doctype": "Web Page",
-        "filters": [["module", "=", "Jim"]]
+        "filters": [["module", "=", "gym_management_system"]]
     },
     {
         "doctype": "Web Template",
-        "filters": [["module", "=", "Jim"]]
+        "filters": [["module", "=", "gym_management_system"]]
     },
     {
         "doctype": "Website Settings",
