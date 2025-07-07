@@ -277,14 +277,43 @@ fixtures = [
 "Role",
 "Web Form",
 {
-"doctype": "Web Page",
-"filters": [["module", "=", "gym_management_system"]]
-},
-{
-"doctype": "Web Template",
-"filters": [["module", "=", "gym_management_system"]]
-},
-{
-"doctype": "Website Settings"
-}
+        "doctype": "Gym Membership",
+        "filters": []
+    },
+    {
+        "doctype": "Gym Settings",
+        "filters": []
+    },
+    {
+        "doctype": "Locker",
+        "filters": []
+    },
+    {
+        "doctype": "Gym TrainerReg",
+        "filters": []
+    },
+    {
+        "doctype": " Trainer Specialization",
+        "filters": []
+    },
+    {
+        "doctype": "Category",
+        "filters": []
+    },
+    {
+        "doctype": "Metric Update",
+        "filters": []
+    },
+    {
+        "doctype": "Web Page",
+        "filters": [["module", "=", "Jim"]]
+    },
+    {
+        "doctype": "Web Template",
+        "filters": [["module", "=", "Jim"]]
+    },
+    {
+        "doctype": "Website Settings",
+        "filters": []
+    }
 ]
