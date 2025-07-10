@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-30 11:05:33.692514",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "gym_name",
+  "total_lockers",
+  "gym_open_time",
+  "gym_close_time",
+  "locker_deposit_amount",
+  "monthly_plan_price",
+  "quarterly_plan_price",
+  "yearly_plan_price",
+  "gym_email"
+ ],
+ "fields": [
+  {
+   "default": "GYM ZONE",
+   "fieldname": "gym_name",
+   "fieldtype": "Data",
+   "label": "Gym Name",
+   "read_only": 1
+  },
+  {
+   "default": "30",
+   "fieldname": "total_lockers",
+   "fieldtype": "Int",
+   "label": "Total Lockers",
+   "read_only": 1
+  },
+  {
+   "default": "5:00 AM ",
+   "fieldname": "gym_open_time",
+   "fieldtype": "Time",
+   "label": "Gym Open Time",
+   "read_only": 1
+  },
+  {
+   "default": "11:00 PM",
+   "fieldname": "gym_close_time",
+   "fieldtype": "Time",
+   "label": "Gym Close Time",
+   "read_only": 1
+  },
+  {
+   "default": "200",
+   "fieldname": "locker_deposit_amount",
+   "fieldtype": "Currency",
+   "label": "Locker Deposit amount",
+   "read_only": 1
+  },
+  {
+   "default": "3000",
+   "fieldname": "monthly_plan_price",
+   "fieldtype": "Currency",
+   "label": "Monthly Plan Price",
+   "read_only": 1
+  },
+  {
+   "default": "6000",
+   "fieldname": "quarterly_plan_price",
+   "fieldtype": "Currency",
+   "label": "Quarterly Plan Price",
+   "read_only": 1
+  },
+  {
+   "default": "15000",
+   "fieldname": "yearly_plan_price",
+   "fieldtype": "Currency",
+   "label": "Yearly Plan Price",
+   "read_only": 1
+  },
+  {
+   "default": "gymzone45@gmail.com",
+   "fieldname": "gym_email",
+   "fieldtype": "Data",
+   "label": "Gym Email",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-07-10 15:35:35.806707",
+ "modified_by": "Administrator",
+ "module": "Gym Management System",
+ "name": "Gym Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
