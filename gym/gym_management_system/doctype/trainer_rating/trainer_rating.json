@@ -1,34 +1,44 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{level}",
- "creation": "2025-07-09 11:32:54.629096",
+ "autoname": "format:{email}",
+ "creation": "2025-07-09 10:00:05.299722",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "level",
-  "workout_plan"
+  "email",
+  "trainer_name",
+  "trainer_rating"
  ],
  "fields": [
   {
-   "fieldname": "level",
+   "fieldname": "trainer_name",
    "fieldtype": "Select",
-   "label": "Level ",
-   "options": "Begineer\nIntermediate\nAdvanced"
+   "in_list_view": 1,
+   "label": "Trainer name",
+   "reqd": 1
   },
   {
-   "fieldname": "workout_plan",
-   "fieldtype": "Small Text",
-   "label": "Workout Plan "
+   "fieldname": "trainer_rating",
+   "fieldtype": "Rating",
+   "in_list_view": 1,
+   "label": "Trainer Rating",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 13:44:47.193404",
+ "modified": "2025-07-09 17:32:29.610651",
  "modified_by": "Administrator",
  "module": "Gym Management System",
- "name": "Workout Plan",
+ "name": "Trainer Rating",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -46,9 +56,8 @@
   }
  ],
  "row_format": "Dynamic",
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "level"
+ "title_field": "email"
 }

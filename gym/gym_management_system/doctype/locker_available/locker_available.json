@@ -1,35 +1,30 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "format:{level}",
- "creation": "2025-07-09 11:32:54.629096",
+ "autoname": "field:locker",
+ "creation": "2025-07-08 10:32:45.687246",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "level",
-  "workout_plan"
+  "locker"
  ],
  "fields": [
   {
-   "fieldname": "level",
-   "fieldtype": "Select",
-   "label": "Level ",
-   "options": "Begineer\nIntermediate\nAdvanced"
-  },
-  {
-   "fieldname": "workout_plan",
-   "fieldtype": "Small Text",
-   "label": "Workout Plan "
+   "fieldname": "locker",
+   "fieldtype": "Data",
+   "label": "Locker",
+   "unique": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 13:44:47.193404",
+ "modified": "2025-07-08 16:35:23.132709",
  "modified_by": "Administrator",
  "module": "Gym Management System",
- "name": "Workout Plan",
- "naming_rule": "Expression",
+ "name": "Locker Available",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -46,9 +41,7 @@
   }
  ],
  "row_format": "Dynamic",
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "level"
+ "states": []
 }

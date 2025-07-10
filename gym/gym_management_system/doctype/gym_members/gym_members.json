@@ -1,34 +1,54 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{level}",
- "creation": "2025-07-09 11:32:54.629096",
+ "autoname": "format:{email}",
+ "creation": "2025-07-08 16:35:52.336087",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "level",
-  "workout_plan"
+  "name1",
+  "role",
+  "email",
+  "password"
  ],
  "fields": [
   {
-   "fieldname": "level",
-   "fieldtype": "Select",
-   "label": "Level ",
-   "options": "Begineer\nIntermediate\nAdvanced"
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
   },
   {
-   "fieldname": "workout_plan",
-   "fieldtype": "Small Text",
-   "label": "Workout Plan "
+   "fieldname": "role",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Role",
+   "options": "Trainer\nUser",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 13:44:47.193404",
+ "modified": "2025-07-09 15:27:06.937508",
  "modified_by": "Administrator",
  "module": "Gym Management System",
- "name": "Workout Plan",
+ "name": "Gym Members",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -50,5 +70,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "level"
+ "title_field": "email"
 }

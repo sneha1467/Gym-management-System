@@ -29,7 +29,7 @@
   "home_page": null,
   "indexing_authorization_code": null,
   "indexing_refresh_token": null,
-  "modified": "2025-07-05 13:56:08.897994",
+  "modified": "2025-07-09 19:08:01.773281",
   "name": "Website Settings",
   "navbar_search": 0,
   "navbar_template": null,
@@ -51,37 +51,57 @@
     "parentfield": "top_bar_items",
     "parenttype": "Website Settings",
     "right": 1,
-    "url": "http://127.0.0.1:8001/gym-about"
+    "url": "gym-about"
    },
    {
-    "label": "Members",
+    "label": "Setting",
     "open_in_new_tab": 0,
     "parent": "Website Settings",
     "parent_label": null,
     "parentfield": "top_bar_items",
     "parenttype": "Website Settings",
     "right": 1,
-    "url": "http://gymzone.com:8001/gym-membership/new"
+    "url": "gym-setting"
    },
    {
-    "label": "Trainers",
+    "label": "BMI",
     "open_in_new_tab": 0,
     "parent": "Website Settings",
     "parent_label": null,
     "parentfield": "top_bar_items",
     "parenttype": "Website Settings",
     "right": 1,
-    "url": "http://gymzone.com:8001/gym-trainer/new"
+    "url": "fitness-track"
    },
    {
-    "label": "Settings",
+    "label": "Trainer rating",
     "open_in_new_tab": 0,
     "parent": "Website Settings",
     "parent_label": null,
     "parentfield": "top_bar_items",
     "parenttype": "Website Settings",
     "right": 1,
-    "url": "http://gymzone.com:8001/gym-setting/new"
+    "url": "gym-trainer-rating"
+   },
+   {
+    "label": "Class Booking",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "gym-class-booking"
+   },
+   {
+    "label": "Workout Plan",
+    "open_in_new_tab": 0,
+    "parent": "Website Settings",
+    "parent_label": null,
+    "parentfield": "top_bar_items",
+    "parenttype": "Website Settings",
+    "right": 1,
+    "url": "workout-plan"
    },
    {
     "label": "Member Profile",
@@ -91,7 +111,7 @@
     "parentfield": "top_bar_items",
     "parenttype": "Website Settings",
     "right": 1,
-    "url": "/report"
+    "url": "/member-details"
    }
   ],
   "website_theme": "Standard",

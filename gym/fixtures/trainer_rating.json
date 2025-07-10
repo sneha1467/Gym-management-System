@@ -1,0 +1,65 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "sneha1@gmail.com",
+  "modified": "2025-07-09 17:32:37.495759",
+  "name": "sneha1@gmail.com",
+  "trainer_name": "Rakesh Singh",
+  "trainer_rating": 0.6
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "kishor@gmail.com",
+  "modified": "2025-07-09 19:29:37.911133",
+  "name": "kishor@gmail.com",
+  "trainer_name": "Jigar Gohil",
+  "trainer_rating": 0.8
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "akshatdas@gmail.com",
+  "modified": "2025-07-10 10:41:47.445576",
+  "name": "akshatdas@gmail.com",
+  "trainer_name": "Akash Deshmukh",
+  "trainer_rating": 0.7
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "jyoti@gmail.com",
+  "modified": "2025-07-10 10:43:19.056475",
+  "name": "jyoti@gmail.com",
+  "trainer_name": "Rakesh Singh",
+  "trainer_rating": 0.9
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "akashchaturvedi@gmail.com",
+  "modified": "2025-07-10 10:45:03.985278",
+  "name": "akashchaturvedi@gmail.com",
+  "trainer_name": "Diksha Parab",
+  "trainer_rating": 0.6
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "shristi@gmail.com",
+  "modified": "2025-07-10 10:48:09.739304",
+  "name": "shristi@gmail.com",
+  "trainer_name": "Janhavi Kasurde",
+  "trainer_rating": 0.9
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "rucha@gmail.com",
+  "modified": "2025-07-10 12:11:17.936309",
+  "name": "rucha@gmail.com",
+  "trainer_name": "Diksha Parab",
+  "trainer_rating": 0.9
+ }
+]

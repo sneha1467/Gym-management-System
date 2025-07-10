@@ -1,0 +1,17 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Gym Settings",
+  "gym_close_time": "18:04:53.242949",
+  "gym_email": "gymzone45@gmail.com",
+  "gym_name": "GYM ZONE",
+  "gym_open_time": "18:04:53.242808",
+  "locker_deposit_amount": 200.0,
+  "modified": "2025-06-30 18:04:53.245201",
+  "monthly_plan_price": 3000.0,
+  "name": "Gym Settings",
+  "quarterly_plan_price": 6000.0,
+  "total_lockers": 30,
+  "yearly_plan_price": 15000.0
+ }
+]

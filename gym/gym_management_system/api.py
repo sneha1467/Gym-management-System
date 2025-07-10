@@ -1,82 +1,75 @@
-
 import frappe
-import json
-@frappe.whitelist()
-def get_filtered_trainers(doctype, txt, searchfield, start, page_len, filters=None):
-    import json
-
-    if filters and isinstance(filters, str):
-        filters = json.loads(filters)
-    elif not filters:
-        filters = {}
-
-    specialization = filters.get('specialization')
-    conditions = []
-    values = []
-
-    if specialization:
-        conditions.append("specialization = %s")
-        values.append(specialization)
-
-    start = int(start)
-    page_len = int(page_len)
-
-    query = f"""
-        SELECT name, name1 FROM `tabTrainerReg`
-        WHERE {searchfield} LIKE %s
-    """
-
-    values = [f"%{txt}%"] + values
-
-    if conditions:
-        query += " AND " + " AND ".join(conditions)
-
-    query += " LIMIT %s OFFSET %s"
-    values += [page_len, start]
-
-    results = frappe.db.sql(query, values, as_dict=True)
-
-
-    mapped_results = [{"value": r["name"], "label": r["name1"]} for r in results]
-
-    return mapped_results
-
-
-
-
-import frappe
+from frappe.auth import LoginManager
 from frappe import _
 
 @frappe.whitelist()
-def get_membership_report(member_id):
-    try:
-        if not member_id:
-            return None
+def authenticate_user(email, password, role):
+    """Authenticate the user using email, password, and role."""
+    
+   
+    gym_member = frappe.get_all(
+        "Gym Members", 
+        filters={"email": email}, 
+        fields=["name1", "role", "password"] 
+    )
 
-       
-        if frappe.db.exists("Gym Membership", member_id):
-            membership = frappe.get_doc("Gym Membership", member_id)
+    if not gym_member:
+        return {"success": False, "message": "Invalid email"}  
 
-            return {
-                "name1": membership.get("name1"),
-                "contact": membership.get("contact"),
-                "email_id": membership.get("email_id"),
-                "joining_date": membership.get("joining_date"),
-                "ending_date": membership.get("ending_date")
-            }
+    
+    stored_password = gym_member[0]["password"]
+    
+    
+    if stored_password != password:
+        return {"success": False, "message": "Invalid password"}  
+    
 
-       
-        result = frappe.get_all(
-            "Gym Membership",
-            filters={"name1": ["like", f"%{member_id}%"]},
-            fields=["name1", "contact", "email_id", "joining_date", "ending_date"],
-            limit=1
-        )
-        if result:
-            return result[0]
+    if gym_member[0]["role"] != role:
+        return {"success": False, "message": "Invalid role"}  
 
-        return None
+   
+    return {"success": True, "message": "Authentication successful", "role": gym_member[0]["role"]}
 
-    except Exception as e:
-        frappe.log_error(frappe.get_traceback(), " Customer Report API Error")
-        frappe.throw(_("Something went wrong while generating the report."))
+
+import frappe
+from datetime import datetime
+
+@frappe.whitelist(allow_guest=True)
+def get_member_details(email):
+
+  
+    membership = frappe.get_doc("Gym Membership", email)
+
+  
+    today = datetime.today().date()
+    ending_date = membership.ending_date
+    remaining_days = (ending_date - today).days if ending_date else None
+
+   
+    booking = frappe.get_all("Gym Class Booking",
+                             filters={"email": email},
+                             fields=["trainer_name"],
+                             limit_page_length=1)
+
+    trainer_name = booking[0].trainer_name if booking else None
+    trainer_info = {}
+    
+    if trainer_name:
+        trainer = frappe.get_doc("TrainerReg", trainer_name)
+        trainer_info = {
+            "name": trainer.name,
+            "email_id": trainer.email_id,
+            "contact_no": trainer.contact_no,
+            "address": trainer.address,
+            "gender": trainer.gender
+        }
+
+    return {
+        "email": membership.email_id,
+        "contact": membership.contact,
+        "plan": membership.plans,
+        "joining_date": membership.joining_date,
+        "ending_date": membership.ending_date,
+        "remaining_days": remaining_days,
+        "trainer": trainer_info
+    }

@@ -1,35 +1,37 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "format:{level}",
- "creation": "2025-07-09 11:32:54.629096",
+ "autoname": "autoincrement",
+ "creation": "2025-07-08 16:17:09.307870",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "level",
-  "workout_plan"
+  "email",
+  "fitness_track"
  ],
  "fields": [
   {
-   "fieldname": "level",
-   "fieldtype": "Select",
-   "label": "Level ",
-   "options": "Begineer\nIntermediate\nAdvanced"
+   "fieldname": "fitness_track",
+   "fieldtype": "Table",
+   "label": "Fitness Track",
+   "options": "Metric Update",
+   "reqd": 1
   },
   {
-   "fieldname": "workout_plan",
-   "fieldtype": "Small Text",
-   "label": "Workout Plan "
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 13:44:47.193404",
+ "modified": "2025-07-10 10:35:53.737488",
  "modified_by": "Administrator",
  "module": "Gym Management System",
- "name": "Workout Plan",
- "naming_rule": "Expression",
+ "name": "BMI",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
@@ -46,9 +48,7 @@
   }
  ],
  "row_format": "Dynamic",
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "level"
+ "states": []
 }

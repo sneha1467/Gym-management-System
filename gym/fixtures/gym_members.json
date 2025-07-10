@@ -1,0 +1,82 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "sneha1@gmail.com",
+  "modified": "2025-07-09 15:31:09.768645",
+  "name": "sneha1@gmail.com",
+  "name1": "sneha",
+  "password": "sneha1@gmail.com",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "shristi@gmail.com",
+  "modified": "2025-07-09 19:14:17.966367",
+  "name": "shristi@gmail.com",
+  "name1": "Shristi Garg",
+  "password": "shristi@1",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "kishor@gmail.com",
+  "modified": "2025-07-09 19:28:34.746378",
+  "name": "kishor@gmail.com",
+  "name1": "Kishor ",
+  "password": "kishor",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "akashchaturvedi@gmail.com",
+  "modified": "2025-07-10 10:01:50.885717",
+  "name": "akashchaturvedi@gmail.com",
+  "name1": "Akash Chaturvedi",
+  "password": "redhat",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "jyoti@gmail.com",
+  "modified": "2025-07-10 10:34:35.695965",
+  "name": "jyoti@gmail.com",
+  "name1": "Jyoti Singh",
+  "password": "jyoti",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "akshatdas@gmail.com",
+  "modified": "2025-07-10 10:38:42.164288",
+  "name": "akshatdas@gmail.com",
+  "name1": "Akshat Das",
+  "password": "akshat",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "rucha@gmail.com",
+  "modified": "2025-07-10 12:08:24.183405",
+  "name": "rucha@gmail.com",
+  "name1": "Rucha Sonar",
+  "password": "rucha",
+  "role": "User"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "richa@gmail.com",
+  "modified": "2025-07-10 12:11:54.959122",
+  "name": "richa@gmail.com",
+  "name1": "Richa",
+  "password": "richa",
+  "role": "User"
+ }
+]

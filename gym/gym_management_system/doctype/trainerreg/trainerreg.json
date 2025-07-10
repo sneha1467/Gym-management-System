@@ -10,7 +10,6 @@
   "contact_no",
   "gender",
   "address",
-  "profile_image",
   "specialization"
  ],
  "fields": [
@@ -44,11 +43,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "profile_image",
-   "fieldtype": "Attach Image",
-   "label": "Profile Image"
-  },
-  {
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "Gender",
@@ -66,7 +60,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-02 15:53:56.506317",
+ "modified": "2025-07-09 17:22:25.809197",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "TrainerReg",

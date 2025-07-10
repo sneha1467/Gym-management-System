@@ -1,11 +1,10 @@
 {
  "actions": [],
- "autoname": "autoincrement",
+ "autoname": "field:email_id",
  "creation": "2025-06-25 16:43:58.089994",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "name1",
   "email_id",
   "contact",
   "gender",
@@ -13,23 +12,11 @@
   "joining_date",
   "ending_date",
   "assign_locker",
-  "locker",
+  "locker_available",
   "address",
-  "fitness_track",
-  "specialization",
-  "trainer",
-  "trainer_rating",
   "final_price"
  ],
  "fields": [
-  {
-   "fieldname": "name1",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Name",
-   "reqd": 1,
-   "unique": 1
-  },
   {
    "fieldname": "contact",
    "fieldtype": "Phone",
@@ -39,10 +26,12 @@
   },
   {
    "fieldname": "email_id",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Email ID",
-   "reqd": 1
+   "options": "Gym Members",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "joining_date",
@@ -75,13 +64,8 @@
    "fieldname": "ending_date",
    "fieldtype": "Date",
    "label": "Ending Date",
+   "read_only": 1,
    "reqd": 1
-  },
-  {
-   "fieldname": "locker",
-   "fieldtype": "Link",
-   "label": "Locker ",
-   "options": "Locker"
   },
   {
    "fieldname": "assign_locker",
@@ -90,28 +74,10 @@
    "options": "Yes\nNo"
   },
   {
-   "fieldname": "fitness_track",
-   "fieldtype": "Table",
-   "label": "Fitness Track",
-   "options": "Metric Update",
-   "reqd": 1
-  },
-  {
-   "fieldname": "specialization",
+   "fieldname": "locker_available",
    "fieldtype": "Link",
-   "label": "Specialization",
-   "options": "Category",
-   "reqd": 1
-  },
-  {
-   "fieldname": "trainer",
-   "fieldtype": "Select",
-   "label": "Trainer"
-  },
-  {
-   "fieldname": "trainer_rating",
-   "fieldtype": "Rating",
-   "label": "Trainer Rating"
+   "label": "Locker Available",
+   "options": "Locker Available"
   },
   {
    "fieldname": "final_price",
@@ -123,11 +89,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-05 14:15:55.501172",
+ "modified": "2025-07-10 09:27:55.726582",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Membership",
- "naming_rule": "Autoincrement",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
