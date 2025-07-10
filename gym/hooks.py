@@ -305,11 +305,11 @@ fixtures = [
     },
     {
         "doctype": "Web Page",
-        "filters": [["module", "=", "gym_management_system"]]
+        "filters": [["module", "=", "Gym Management System"]]
     },
     {
         "doctype": "Web Template",
-        "filters": [["module", "=", "gym_management_system"]]
+        "filters": [["module", "=", "Gym Management System"]]
     },
     {
         "doctype": "Website Settings",
