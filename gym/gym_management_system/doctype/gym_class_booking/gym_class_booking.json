@@ -1,7 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "format:{email}",
+ "autoname": "autoincrement",
  "creation": "2025-07-09 09:07:37.290080",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -35,11 +34,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 15:39:12.891738",
+ "modified": "2025-07-11 12:28:24.185166",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "Gym Class Booking",
- "naming_rule": "Expression",
+ "naming_rule": "Autoincrement",
  "owner": "Administrator",
  "permissions": [
   {
@@ -56,9 +55,7 @@
   }
  ],
  "row_format": "Dynamic",
- "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": [],
- "title_field": "email"
+ "states": []
 }

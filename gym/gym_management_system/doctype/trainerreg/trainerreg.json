@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "field:name1",
+ "autoname": "format: T-{###}",
  "creation": "2025-06-25 13:59:36.737276",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -23,9 +23,10 @@
   },
   {
    "fieldname": "email_id",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Email ID",
+   "options": "Gym Members",
    "reqd": 1
   },
   {
@@ -60,11 +61,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-07-09 17:22:25.809197",
+ "modified": "2025-07-11 18:05:25.502800",
  "modified_by": "Administrator",
  "module": "Gym Management System",
  "name": "TrainerReg",
- "naming_rule": "By fieldname",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
