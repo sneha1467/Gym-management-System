@@ -318,9 +318,13 @@ fixtures = [
         "doctype": "Website Settings",
         "filters": []
     },
-
     {
-        "doctype": "User",
-        "filters": []
-    }
+        "doctype": "Role",
+        "filters": [["name", "in", ["Gym Member", "Gym Trainer", "Gym Admin"]]]
+    },
+    {
+        "doctype": "Custom DocPerm",
+        "filters": [["role", "in", ["Gym Member", "Gym Trainer", "Gym Admin"]]]
+    },
+
 ]
