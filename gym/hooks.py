@@ -259,6 +259,9 @@ fixtures = [
     "Property Setter",
     "Report",
     "Web Form",
+    "Custom DocPerm",
+    "Role",
+  
 {
         "doctype": "Gym Membership",
         "filters": []
@@ -313,6 +316,11 @@ fixtures = [
     },
     {
         "doctype": "Website Settings",
+        "filters": []
+    },
+
+    {
+        "doctype": "User",
         "filters": []
     }
 ]
