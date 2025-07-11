@@ -1,0 +1,47 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 18:16:09.853074",
+  "name": 1,
+  "trainer_name": "Akash Deshmukh",
+  "trainer_rating": 0.7
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 18:16:14.076446",
+  "name": 2,
+  "trainer_name": "Akash Deshmukh",
+  "trainer_rating": 0.8
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 18:16:49.026923",
+  "name": 3,
+  "trainer_name": "Rakesh Singh",
+  "trainer_rating": 0.4
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 18:17:35.920891",
+  "name": 4,
+  "trainer_name": "Akash Deshmukh",
+  "trainer_rating": 0.8
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Trainer Rating",
+  "email": "jay@gmail.com",
+  "modified": "2025-07-11 18:29:32.837070",
+  "name": 5,
+  "trainer_name": "Jigar Gohil",
+  "trainer_rating": 0.7
+ }
+]

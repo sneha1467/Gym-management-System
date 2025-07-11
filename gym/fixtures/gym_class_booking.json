@@ -1,0 +1,137 @@
+[
+ {
+  "class_boooking": "11",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "kunal@gmail.com",
+  "modified": "2025-07-11 17:04:26.676063",
+  "name": 5,
+  "trainer_name": "Diksha Parab"
+ },
+ {
+  "class_boooking": "9",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "kunal@gmail.com",
+  "modified": "2025-07-11 17:04:51.326027",
+  "name": 6,
+  "trainer_name": "Tanvi"
+ },
+ {
+  "class_boooking": "10",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 17:13:45.090124",
+  "name": 7,
+  "trainer_name": "Rakesh Singh"
+ },
+ {
+  "class_boooking": "10",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 17:14:49.591801",
+  "name": 8,
+  "trainer_name": "Rakesh Singh"
+ },
+ {
+  "class_boooking": "11",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 17:33:07.441937",
+  "name": 9,
+  "trainer_name": "Diksha Parab"
+ },
+ {
+  "class_boooking": "2",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 17:41:01.469806",
+  "name": 10,
+  "trainer_name": "Rakesh Singh"
+ },
+ {
+  "class_boooking": "3",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 17:45:04.210213",
+  "name": 11,
+  "trainer_name": "Akash Deshmukh"
+ },
+ {
+  "class_boooking": "2",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 17:47:23.551965",
+  "name": 12,
+  "trainer_name": "Rakesh Singh"
+ },
+ {
+  "class_boooking": "3",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 17:48:49.626232",
+  "name": 13,
+  "trainer_name": "Akash Deshmukh"
+ },
+ {
+  "class_boooking": "2",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 17:49:55.504346",
+  "name": 14,
+  "trainer_name": "Rakesh Singh"
+ },
+ {
+  "class_boooking": "2",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "jay@gmail.com",
+  "modified": "2025-07-11 17:52:22.193971",
+  "name": 15,
+  "trainer_name": "Rakesh Singh"
+ },
+ {
+  "class_boooking": "3",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 18:11:58.223246",
+  "name": 16,
+  "trainer_name": "Akash Deshmukh"
+ },
+ {
+  "class_boooking": "2",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 18:16:32.352094",
+  "name": 17,
+  "trainer_name": "Rakesh Singh"
+ },
+ {
+  "class_boooking": "3",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 18:17:22.841951",
+  "name": 18,
+  "trainer_name": "Akash Deshmukh"
+ },
+ {
+  "class_boooking": "8",
+  "docstatus": 0,
+  "doctype": "Gym Class Booking",
+  "email": "jay@gmail.com",
+  "modified": "2025-07-11 18:29:23.435469",
+  "name": 19,
+  "trainer_name": "Jigar Gohil"
+ }
+]

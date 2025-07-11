@@ -1,0 +1,86 @@
+[
+ {
+  "address": "airoli",
+  "contact_no": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email_id": "rakesh@gmail.com",
+  "gender": "Male",
+  "modified": "2025-07-11 17:40:02.288583",
+  "name": "T-007",
+  "name1": "Rakesh Singh",
+  "specialization": "2"
+ },
+ {
+  "address": "Airoli",
+  "contact_no": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email_id": "akash@gmail.com",
+  "gender": "Male",
+  "modified": "2025-07-11 17:44:21.996368",
+  "name": "T-008",
+  "name1": "Akash Deshmukh",
+  "specialization": "3"
+ },
+ {
+  "address": "airoli",
+  "contact_no": "+91-7894561237",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email_id": "Tina",
+  "gender": "Female",
+  "modified": "2025-07-11 18:23:22.162818",
+  "name": "T-009",
+  "name1": "Tina",
+  "specialization": "4"
+ },
+ {
+  "address": "airoli",
+  "contact_no": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email_id": "Sapndan",
+  "gender": "Male",
+  "modified": "2025-07-11 18:24:38.858141",
+  "name": "T-010",
+  "name1": "Sapndan",
+  "specialization": "5"
+ },
+ {
+  "address": "airoli",
+  "contact_no": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email_id": "Jigar Gohil",
+  "gender": "Male",
+  "modified": "2025-07-11 18:25:56.724734",
+  "name": "T-011",
+  "name1": "Jigar Gohil",
+  "specialization": "8"
+ },
+ {
+  "address": "airoli",
+  "contact_no": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email_id": "Aditya Singh",
+  "gender": "Male",
+  "modified": "2025-07-11 18:27:11.907537",
+  "name": "T-012",
+  "name1": "Aditya Singh",
+  "specialization": "7"
+ },
+ {
+  "address": "airoli",
+  "contact_no": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "TrainerReg",
+  "email_id": "Shubhnagi",
+  "gender": "Male",
+  "modified": "2025-07-11 18:28:28.704119",
+  "name": "T-013",
+  "name1": "Shubhangi Aksar",
+  "specialization": "9"
+ }
+]

@@ -1,0 +1,102 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "kunal@gmail.com",
+  "modified": "2025-07-11 17:02:56.789816",
+  "name": "Kunal Sharma",
+  "name1": "Kunal Sharma",
+  "password": "kunal@12",
+  "role": "Gym Member"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "sneha@gmail.com",
+  "modified": "2025-07-11 17:08:45.429673",
+  "name": "Sneha Singh",
+  "name1": "Sneha Singh",
+  "password": "sneha@14",
+  "role": "Gym Admin"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "nandini@gmail.com",
+  "modified": "2025-07-11 17:11:49.150955",
+  "name": "Nandini",
+  "name1": "Nandini",
+  "password": "redhat@12",
+  "role": "Gym Member"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "tanvi@gmail.com",
+  "modified": "2025-07-11 17:21:54.114756",
+  "name": "Tanvi",
+  "name1": "Tanvi",
+  "password": "tanvi@12345",
+  "role": "Gym Member"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "tina@gmail.com",
+  "modified": "2025-07-11 18:23:01.640872",
+  "name": "Tina",
+  "name1": "Tina",
+  "password": "tina@123",
+  "role": "Gym Trainer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "sapndan@gmail.com",
+  "modified": "2025-07-11 18:24:05.942941",
+  "name": "Sapndan",
+  "name1": "Sapndan",
+  "password": "redhat@12",
+  "role": "Gym Trainer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "jigar@gmail.com",
+  "modified": "2025-07-11 18:25:19.765451",
+  "name": "Jigar Gohil",
+  "name1": "Jigar Gohil",
+  "password": "jiagr@12",
+  "role": "Gym Trainer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "aditya@gmail.com",
+  "modified": "2025-07-11 18:26:51.110636",
+  "name": "Aditya Singh",
+  "name1": "Aditya Singh",
+  "password": "aditya@12",
+  "role": "Gym Trainer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "shubhangi@gmail.com",
+  "modified": "2025-07-11 18:28:04.446948",
+  "name": "Shubhnagi",
+  "name1": "Shubhnagi",
+  "password": "shubhangi@123",
+  "role": "Gym Trainer"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Gym Members",
+  "email": "jay@gmail.com",
+  "modified": "2025-07-11 17:18:20.798649",
+  "name": "Jay Anjarlekar",
+  "name1": "Jay Anjarlekar",
+  "password": "linux@123",
+  "role": "Gym Member"
+ }
+]

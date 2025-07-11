@@ -1,0 +1,21 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "BMI",
+  "email": "jay@gmail.com",
+  "fitness_track": [
+   {
+    "bmi": 21.4,
+    "calories": 700.0,
+    "date": "2025-07-02",
+    "height": 145.0,
+    "parent": 14,
+    "parentfield": "fitness_track",
+    "parenttype": "BMI",
+    "weight": 45.0
+   }
+  ],
+  "modified": "2025-07-11 18:29:51.599780",
+  "name": 14
+ }
+]

@@ -1,0 +1,50 @@
+[
+ {
+  "address": "airoli",
+  "assign_locker": "Yes",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "Gym Membership",
+  "email_id": "Nandini",
+  "ending_date": "2025-08-22",
+  "final_price": 3200.0,
+  "gender": "Male",
+  "joining_date": "2025-07-23",
+  "locker_available": "L021",
+  "modified": "2025-07-11 17:12:11.227646",
+  "name": "M-004",
+  "plans": "Monthly (₹3000)"
+ },
+ {
+  "address": "Airolii",
+  "assign_locker": "No",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "Gym Membership",
+  "email_id": "Jay Anjarlekar",
+  "ending_date": "2025-09-29",
+  "final_price": 6000.0,
+  "gender": "Male",
+  "joining_date": "2025-07-01",
+  "locker_available": null,
+  "modified": "2025-07-11 18:30:19.234955",
+  "name": "M-005",
+  "plans": "Quarterly (₹6000)"
+ },
+ {
+  "address": "airoli",
+  "assign_locker": "No",
+  "contact": "+91-1234567890",
+  "docstatus": 0,
+  "doctype": "Gym Membership",
+  "email_id": "Tanvi",
+  "ending_date": "2025-08-01",
+  "final_price": 3000.0,
+  "gender": "Male",
+  "joining_date": "2025-07-02",
+  "locker_available": null,
+  "modified": "2025-07-11 18:30:32.635857",
+  "name": "M-006",
+  "plans": "Monthly (₹3000)"
+ }
+]
