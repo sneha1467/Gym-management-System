@@ -1,5 +1,4 @@
-import frappe
-from datetime import datetime
+import frappe from datetime import datetime
 
 def execute(filters=None):
     # Fetch raw joining_date and final_price
